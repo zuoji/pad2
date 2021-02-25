@@ -1,0 +1,634 @@
+html,body{
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  background: #f3f3f3;
+  height: 100%;
+  overflow: hidden;
+}
+ul,li,dl,dt,dd{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.clearFixed::after{
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+ul.lj li{
+  font-size: 26px;
+}
+ul.lj li span{
+  font-size: 26px;
+  display: block;
+}
+#header{
+  background: #fff;
+  padding: 10px 20px;
+  height: initial !important;
+}
+#header img{
+  vertical-align: middle;
+}
+#header > span{
+  display: inline-block;
+  margin-right: 30px;
+}
+#header #logout, #header #setting{
+  float: right;
+  margin-right: 10px;
+}
+.el-main{
+  background: #f3f3f3;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  /*height: 638px;*/
+}
+ul.lj{}
+ul.lj li{
+  width: 20%;
+  float: left;
+  text-align: center;
+  font-size: 30px;
+}
+ul.lj li .icons{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  font-size: 50px;
+  color: #fff;
+  line-height: 100px;
+  display: inline-block;
+  margin: 20px;
+}
+ul.lj .icons i{
+  font-size: 60px;
+}
+#indexPage ul.lj li:nth-child(1) .icons{
+  background: #1d6cd4;
+}
+#indexPage ul.lj li:nth-child(2) .icons{
+  background: #9f4025;
+}
+#indexPage ul.lj li:nth-child(3) .icons{
+  background: #b16b20;
+}
+#indexPage ul.lj li:nth-child(4) .icons{
+  background: #167361;
+}
+#indexPage ul.lj li:nth-child(5) .icons{
+  background: #F56C6C;
+}
+#indexPage button.on{
+  background: #409eff;
+  color: #fff;
+}
+ul.lj > span{
+  display: block;
+  font-size: 26px;
+}
+
+.todaytotal{
+  width: 15%;
+  float: left;
+}
+.deplist{
+  width: 75%;
+  float: left;
+}
+.deplist ul{}
+.deplist ul li{
+  width: 24%;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  margin: 0.5%;
+  float: left;
+}
+.deplist ul li .d1{
+  width: 74%;
+  height: 34px;
+  overflow: hidden;
+  border-bottom: solid 1px #f3f3f3;
+  box-sizing: border-box;
+  text-align: left;
+  font-weight: bold;
+}
+.deplist ul li .d2{
+  width: 74%;
+  height: 34px;
+  line-height: 34px;
+  overflow: hidden;
+  text-align: left;
+}
+.deplist ul li .num{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20%;
+  height: 80%;
+  background: #909cb0;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 75px;
+}
+.deplist ul li .num.on{
+  background: #ecf5ff;
+}
+.typetab{
+  width: 10%;
+  float: left;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.typetab .el-button{
+  margin-bottom: 10px;
+}
+.el-button+.el-button{
+  margin-left: 0;
+}
+.footer{
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footer button{
+  margin: 0 0.25%;
+  width: 19%;
+  height: 135px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+}
+#card{
+  margin-top: 30px;
+}
+.footer .el-button{
+  font-size: 28px;
+}
+.title{
+  font-size: 18px;
+}
+.ganran{
+  margin: 5px 0;
+}
+.ganran span{
+  font-size: 18px;
+}
+
+/*depCollPage 科室交接页面*/
+#depCollPage{}
+#depCollPage .box1{}
+#depCollPage .box1 > div{
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  float: left;
+  height: 120px;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0 0.5%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+#depCollPage .box1 .exit,#depCollPage .box1 .depjj{
+  width: 11%;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+#depCollPage .box1 .exit i,#depCollPage .box1 .depjj i{
+  font-size: 42px;
+  line-height: 35px;
+}
+#depCollPage .box1 .dep{
+  width: 19%;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 10px;
+}
+#depCollPage .box1 .dep .dpename{
+  font-size: 24px;
+  line-height: 50px;
+  border-bottom: solid 1px #ccc;
+}
+#depCollPage .box1 .dep .infos{
+  padding-top: 10px;
+}
+#depCollPage .box1 .dep .infos span{
+  border-right: solid 1px #ccc;
+  padding: 0 10px;
+}
+#depCollPage .box1 .dep .infos span:last-child{
+  border-right: none;
+}
+#depCollPage .box1 .deatail{
+  width: 55%;
+  padding: 10px;
+}
+#depCollPage .box1 .depjj{
+  width: 11%;
+}
+#depCollPage ul.lj li.c1 .icons,#depCollPage ul.lj li.c1 .icons .el-button,#depCollPage ul.lj li.c1 .icons .el-button:focus{
+  color: #fff;
+  background: #1d6cd4;
+}
+#depCollPage ul.lj li.c2 .icons,#depCollPage ul.lj li.c2 .icons .el-button,#depCollPage ul.lj li.c2 .icons .el-button:focus{
+  color: #fff;
+  background: #9f4025;
+}
+#depCollPage ul.lj li.c3 .icons,#depCollPage ul.lj li.c3 .icons .el-button,#depCollPage ul.lj li.c2 .icons .el-button:focus{
+  color: #fff;
+  background: #b16b20;
+}
+#depCollPage ul.lj li.c4 .icons,#depCollPage ul.lj li.c4 .icons .el-button,#depCollPage ul.lj li.c2 .icons .el-button:focus{
+  color: #fff;
+  background: #167361;
+}
+#depCollPage ul.lj li.c5 .icons,#depCollPage ul.lj li.c5 .icons .el-button,#depCollPage ul.lj li.c2 .icons .el-button:focus{
+  color: #fff;
+  background: #F56C6C;
+}
+#depCollPage .btn-print{
+  display: block;
+  width: 80%;
+  margin: 0 auto 20px;
+  padding: 5px 0;
+}
+.deatail .tabbody{
+  margin-top: 10px;
+  height: 50px;
+  overflow: hidden;
+}
+.deatail span{
+  display: inline-block;
+}
+.deatail .code{
+  width: 25%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.deatail .type{
+  width: 12%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.deatail .deptname{
+  width: 15%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.deatail .weight{
+  width: 12%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.deatail .time{
+  width: 24%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.deatail li{
+  padding: 10px 0;
+  height: 43px;
+  overflow: hidden;
+}
+#depCollPage ul.lj{
+  margin: 10px 0;
+}
+#depCollPage ul.lj li{
+  width: 19%;
+  margin: 0.5%;
+}
+#depCollPage ul.lj li .icons{
+  width: 100%;
+  border-radius: 5px;
+  padding: 160px 0 280px;
+  margin: 0;
+  line-height: 50px;
+}
+#depCollPage ul.lj li .icons span{
+  display: block;
+  font-size: 24px;
+}
+
+/*updataPage 核交*/
+.hj{
+  width: 33.33%;
+  float: left;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+  /*height: 260px;*/
+}
+.el-input__inner{
+  padding: 0 5px;
+}
+.hj .el-input{
+  width: 70%;
+}
+.hj .detail .el-input{
+  width: 100%;
+}
+.hj .detail .el-input input{
+  text-align: left;
+}
+.hj .putBox.el-form{
+  margin-bottom: 10px;
+}
+.hj .putBox .el-input{
+  width: 66%;
+  float: left;
+}
+.hj .putBox .el-input__inner{
+  font-size: 16px;
+  text-align: left;
+}
+.hj .putBox .el-form-item{
+  margin-bottom: 0;
+}
+.hj .el-input__inner{
+  border: none;
+  background: none;
+  font-size: 30px;
+  text-align: right;
+  background-color: inherit;
+}
+.hj .title{
+  font-size: 24px;
+}
+.hj .title button{
+  float: right;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.hj .con{
+  margin-top: 20px;
+}
+.hj .con > div{
+  width: 50%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.hj2 .el-input__inner{
+  border-bottom: solid 1px #ccc;
+}
+.hj .el-input.is-disabled .el-input__inner{
+  background-color: initial;
+  border: none;
+}
+/*intoRoom 入库*/
+#intoRoomPage .hj{
+  width: 50%;
+}
+/*outRoomPage 出库*/
+.waitout,.outed{
+  width: 49%;
+  border-radius: 5px;
+  float: left;
+  margin: 0.5%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+}
+.waitout{
+  background: #fff;
+}
+#intoRoomPage .title,#outRoomPage .title{
+  font-size: 24px;
+  display: block;
+}
+#intoRoomPage .title > span,#outRoomPage .title > span{
+  float: left;
+}
+#intoRoomPage .title .el-button,#outRoomPage .title .el-button{
+  float: right;
+  font-size: 20px;
+}
+#outRoomPage .con{
+
+}
+#outRoomPage .con input{
+  display: inline-block;
+  border: none;
+}
+#outRoomPage .con .el-input{
+  display: inline-block;
+  width: 50px;
+}
+
+/*errorPage 异常*/
+#errorPage{}
+.errType{}
+.errType li{
+  display: inline-block;
+  float: left;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background: #fff;
+}
+.errType li.on{
+  background-color: #409eff;
+  color: #fff;
+}
+.errList{
+  margin: 20px 0;
+}
+#errorPage .el-table::before,#errorPage .el-table__fixed-right::before{
+  visibility: hidden;
+}
+
+
+.footer ul{}
+.footer ul li{
+  width: 19%;
+  float: left;
+  margin: 0 0.5%;
+  background: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  line-height: 100px;
+  font-size: 24px;
+}
+.footer ul li.on{
+  background: #409eff;
+  color: #fff;
+}
+.bigBlue{
+  font-size: 30px;
+  color: #3a8ee6;
+}
+.big{
+  font-size: 30px !important;
+  color: #fff;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.btn-print{
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 5px;
+  border: #fff solid 1px;
+  color: #fff;
+  padding: 0 10px;
+  line-height: 40px;
+}
+.el-table .cell{
+  white-space: nowrap;
+}
+.inputLeft{
+  width: 100%;
+}
+.inputRight{
+  width: 30%;
+  float: right;
+}
+.inputRight button{
+  margin-top: 20px;
+}
+.v-modal{
+  z-index: 2 !important;
+}
+
+#loginPage .el-tabs__item{
+  width: 50%;
+}
+#loginPage .el-tabs__nav{
+  width: 100%;
+  text-align: center;
+}
+#loginPage .el-tabs{
+  background: #fff;
+  padding: 20px 30px 0;
+  border-radius: 5px;
+  width: 30%;
+  margin: 100px auto
+}
+#loginPage .el-tab-pane{
+  padding: 10px 0;
+}
+
+#loginPage #codeInput{
+  /*border: none;*/
+}
+#loginPage #codeInput:focus{
+  /*outline:none*/
+}
+#depCollPage .is-disabled{
+  color: #bcbec2 !important;
+  border: #bcbec2 solid 1px !important;
+}
+.el-table__fixed-right{
+  z-index: 1;
+}
+.el-button.is-round{
+  padding: 7px 23px;
+  margin-top: 10px;
+}
+#updataPage .detail .el-table{
+  top:10px;
+}
+#updataPage .el-form--inline .el-form-item__label{
+  float: left;
+}
+.el-button--text{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#settings .el-form-item{
+  margin-bottom: 10px;
+}
+#updataPage .el-button.is-round{
+  padding: 15px 33px;
+  margin-top: -15px;
+  font-size: 20px;
+}
+#updataPage .el-form--inline .el-form-item__content{
+  float: left;
+  width: 88%;
+}
+#updataPage .el-form--inline .el-form-item{
+  padding: 10px 0;
+  display: block;
+}
+.bluetooth{
+  float: right;
+  margin-top: 10px;
+}
+.bluetooth .iconbluetooth-b{
+  color: #999;
+  font-size: 20px;
+}
+.bluetooth .iconbluetooth{
+  color: #4395ff;
+  font-size: 20px;
+}
+#outRoomPage .con{
+  padding: 20px 0;
+}
+#outRoomPage .con .el-form-item__content input{
+  font-size: 30px;
+  text-align: right;
+}
+#outRoomPage .con .el-input.bigger{
+  width:150px;
+}
+#outRoomPage .detail .el-form-item__content input{
+  width: 240px;
+}
+.el-input.is-disabled .el-input__inner{
+  background: #fff;
+}
+.login2 .el-tabs__active-bar{
+  width: 100% !important;
+}
+.my-keyboard{
+  bottom:0;
+}
+.el-table::before{
+  display: none;
+}
+#btn_submit{
+  font-weight: bold;
+  background: #fff;
+  border: 1px solid #DCDFE6;
+  color: #606266;
+  padding: 8px 20px;
+}
+.btn_bule{
+  border-radius: 20px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #409EFF;
+  padding: 12px 32px;
+  border: none;
+  font-size: 20px;
+}
+.btn_bule:focus{
+  background-color: #409EEE;
+  outline: none;
+}
+.syncData{
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.syncData i{
+  color: #999;
+  font-size: 30px;
+}
+.syncData i.blue{
+  color: #4395ff;
+}
